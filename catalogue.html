@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.css" />
 </head>
 <body>
+    
     <nav class="nav-shop">
         <div class="menu-links"><a href="index.html" class="nav-link">Accueil</a><a href="catalogue.html" class="nav-link" style="color:#28a745">Boutique</a></div>
         <div class="menu-links"><span class="snipcart-checkout nav-link">🛒 Panier</span></div>
@@ -21,50 +22,41 @@
             <div class="produit-card">
                 <img id="img-pull" src="image/produit/pull/pull-main.jpeg" class="img-produit-display">
                 <h3>PULL STREET</h3>
-                <select id="color-pull" onchange="changeColor('pull')">
-                    <option value="">-- Couleur --</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option>
-                </select>
-                <div id="step2-pull" style="display:none;"><select id="size-pull" onchange="updateStep('pull', 3)"><option value="">-- Taille --</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select></div>
+                <select id="color-pull" onchange="changeColor('pull')"><option value="">Couleur</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option></select>
+                <div id="step2-pull" style="display:none;"><select id="size-pull" onchange="updateStep('pull', 3)"><option value="">Taille</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select></div>
                 <div id="step3-pull" style="display:none; margin-top:10px;"><div class="model-selector"><script>for(let i=1;i<=8;i++) document.write(`<button onclick="finalize('pull', ${i})">${i}</button>`);</script></div></div>
-                <button id="btn-pull" class="snipcart-add-item" style="display:none;" data-item-id="pull" data-item-name="Pull Street" data-item-price="45.00" data-item-url="/catalogue.html">Ajouter au panier</button>
+                <button id="btn-pull" class="snipcart-add-item" style="display:none;" data-item-id="pull" data-item-name="Pull Street" data-item-price="45.00" data-item-url="/catalogue.html">Ajouter</button>
             </div>
 
             <div class="produit-card">
                 <img id="img-teeshirt" src="image/produit/teeshirt/teeshirt-main.jpeg" class="img-produit-display">
                 <h3>TEESHIRT STREET</h3>
-                <select id="color-teeshirt" onchange="changeColor('teeshirt')">
-                    <option value="">-- Couleur --</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option>
-                </select>
-                <div id="step2-teeshirt" style="display:none;"><select id="size-teeshirt" onchange="updateStep('teeshirt', 3)"><option value="">-- Taille --</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select></div>
+                <select id="color-teeshirt" onchange="changeColor('teeshirt')"><option value="">Couleur</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option></select>
+                <div id="step2-teeshirt" style="display:none;"><select id="size-teeshirt" onchange="updateStep('teeshirt', 3)"><option value="">Taille</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option></select></div>
                 <div id="step3-teeshirt" style="display:none; margin-top:10px;"><div class="model-selector"><script>for(let i=1;i<=8;i++) document.write(`<button onclick="finalize('teeshirt', ${i})">${i}</button>`);</script></div></div>
-                <button id="btn-teeshirt" class="snipcart-add-item" style="display:none;" data-item-id="teeshirt" data-item-name="Teeshirt Street" data-item-price="25.00" data-item-url="/catalogue.html">Ajouter au panier</button>
+                <button id="btn-teeshirt" class="snipcart-add-item" style="display:none;" data-item-id="teeshirt" data-item-name="Teeshirt Street" data-item-price="25.00" data-item-url="/catalogue.html">Ajouter</button>
             </div>
 
             <div class="produit-card">
                 <img id="img-casquette" src="image/produit/casquette/casquette-main.jpeg" class="img-produit-display">
                 <h3>CASQUETTE STREET</h3>
-                <select id="color-casquette" onchange="changeColor('casquette')">
-                    <option value="">-- Couleur --</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option>
-                </select>
-                <div id="step2-casquette" style="display:none;"><select id="size-casquette" onchange="updateStep('casquette', 3)"><option value="">-- Taille --</option><option value="Adulte">Adulte (Taille unique)</option><option value="Enfant">Enfant (Taille unique)</option></select></div>
+                <select id="color-casquette" onchange="changeColor('casquette')"><option value="">Couleur</option><option value="noir">Noir</option><option value="gris">Gris</option><option value="blanc">Blanc</option></select>
+                <div id="step2-casquette" style="display:none;"><select id="size-casquette" onchange="updateStep('casquette', 3)"><option value="Adulte">Adulte</option><option value="Enfant">Enfant</option></select></div>
                 <div id="step3-casquette" style="display:none; margin-top:10px;"><div class="model-selector"><script>for(let i=1;i<=8;i++) document.write(`<button onclick="finalize('casquette', ${i})">${i}</button>`);</script></div></div>
-                <button id="btn-casquette" class="snipcart-add-item" style="display:none;" data-item-id="casquette" data-item-name="Casquette Street" data-item-price="20.00" data-item-url="/catalogue.html">Ajouter au panier</button>
+                <button id="btn-casquette" class="snipcart-add-item" style="display:none;" data-item-id="casquette" data-item-name="Casquette Street" data-item-price="20.00" data-item-url="/catalogue.html">Ajouter</button>
             </div>
-
         </div>
     </section>
 
     <footer>
         <div class="footer-links">
-            <a href="mentions-legales.html">Mentions Légales</a> | 
-            <a href="cgv.html">Conditions Générales de Vente</a> | 
-            <a href="confidentialite.html">Politique de Confidentialité</a>
+            <a href="mentions-legales.html">Mentions Légales</a> | <a href="cgv.html">CGV</a> | <a href="confidentialite.html">Confidentialité</a>
         </div>
         <div class="footer-text">E-Trott-Life Street © 2026 - Tous droits réservés</div>
     </footer>
 
     <div id="cookie-banner">
-        <p>🍪 En poursuivant votre navigation, vous acceptez l'utilisation de cookies pour assurer le bon fonctionnement de notre boutique.</p>
+        <p>🍪 Ce site utilise des cookies pour assurer le bon fonctionnement du panier.</p>
         <button id="accept-cookies" class="cookie-btn">J'accepte</button>
     </div>
 
